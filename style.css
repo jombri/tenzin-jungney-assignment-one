@@ -157,7 +157,7 @@ header .wrapper {
 
 .desserts-section {
     background-color:rgba(31, 32, 34, .1);
-    padding: 1.5rem 0 1rem 0;
+    padding: 2rem 1rem;
 }
 
 .desserts-container img {
@@ -166,10 +166,6 @@ header .wrapper {
 
 
 @media (min-width: 800px) {
-    html {
-        font-size: 1.25rem;
-    }
-
     header {
         width: 100%;
         height: 100vh;
@@ -244,10 +240,20 @@ header .wrapper {
         height: auto;
     }
 
+    .desserts-section {
+        padding: 4rem 5rem;
+    }
+
     .desserts-container {
         display: flex;
         flex-direction: row;
+        column-gap: 1.5rem;
 
+    }
+
+    .desserts-wrapper {
+        margin: 0;
+        justify-content: space-between;
     }
 
     .desserts-container .img-container {
@@ -265,6 +271,10 @@ header .wrapper {
 }
 
 @media (min-width: 1385px) {
+    html {
+            font-size: 1.25rem;
+    }
+
     h1 {
         font-size: 7.4rem;
         line-height: 120px;
